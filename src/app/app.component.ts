@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DemoServices } from './services';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-ng';
+
+  constructor(private demoService: DemoServices.DemoService) {}
 }
